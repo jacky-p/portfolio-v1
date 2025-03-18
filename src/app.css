@@ -29,18 +29,21 @@
 	top: 0;
 	bottom: 0;
 	width: calc((100% - 1200px) / 2);
-	background-color: #fafafa;
-	border: 1px solid #f4f4f5;
+	/*background-color: #fafafa;
+	border: 1px solid #f4f4f5;*/
+	
 }
 
 .page-content:before {
 	left: 0;
 	z-index: 1;
+	background: linear-gradient(90deg, rgba(255,246,174,1) 0%, rgba(255,223,198,1) 100%);
 }
 
 .page-content:after {
 	right: 0;
 	z-index: 1;
+	background: linear-gradient(90deg, rgba(255,223,198,1) 0%, rgba(255,180,238,1) 100%);
 }
 
 .content-wrapper {

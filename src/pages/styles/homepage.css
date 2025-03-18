@@ -62,7 +62,7 @@
 	padding-right: 20px;
 	font-size: 25px;
 	transition: color 0.2s ease-in-out;
-	color: var(--icon-color);
+	color: var(--link-color);
 }
 
 .homepage-social-icon:hover {
