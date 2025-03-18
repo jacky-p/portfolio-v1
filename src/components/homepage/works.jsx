@@ -10,33 +10,33 @@ const Works = () => {
 		<div className="works">
 			<Card
 				icon={faBriefcase}
-				title="Work"
+				title="Experience"
 				body={
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="./facebook.png"
-								alt="facebook"
+								src="./Digital-NEST-Favicon-1.png"
+								alt="digitalnest"
 								className="work-image"
 							/>
-							<div className="work-title">Facebook</div>
+							<div className="work-title">Digital NEST</div>
 							<div className="work-subtitle">
-								Software Engineer
+								Web Development Intern
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">2024 - Present</div>
 						</div>
 
 						<div className="work">
 							<img
-								src="./twitter.png"
-								alt="twitter"
+								src="./uc_berkeley_logo.jpeg"
+								alt="ucberkeley"
 								className="work-image"
 							/>
-							<div className="work-title">Twitter</div>
+							<div className="work-title">UC Berkeley EECS Department</div>
 							<div className="work-subtitle">
-								Software Engineer
+								Academic Intern
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">Jan 2022 - Dec 2022</div>
 						</div>
 					</div>
 				}
