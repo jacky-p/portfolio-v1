@@ -1,0 +1,135 @@
+.pd-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.pd-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	top: 4vh;
+}
+
+.pd-main-container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas:
+        'top top'
+        'left right';
+
+	display: grid;
+	
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+}
+
+.pd-main-container h2 {
+    margin: 20px 0 20px 0;
+}
+
+.pd-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.top-project-container {
+    grid-area: top;
+}
+
+.left-project-container {
+    grid-area: left;
+    padding-right: 20px;
+}
+
+.right-project-container {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-left: 35px;
+    
+}
+
+.pd-title {
+   
+    padding: 20px 0px 20px 0px;
+}
+
+.pd-image {
+    border-radius: 15px;
+    width: 100%;
+    height: 280px;
+}
+
+.pd-vid {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.pd-text {
+    font-size: 1.3rem;
+}
+
+.pd-text p {
+   line-height: 36px;
+   margin: 0;
+}
+
+.demoTitle {
+    text-align: center;
+} 
+
+.list-points ul {
+    margin: 5px;
+   
+}
+
+.pd-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    
+}
+
+.pd-social-icon {
+	font-size: 3rem;
+	transition: color 0.2s ease-in-out;
+	color: var(--link-color);
+}
+
+.project-links .social-icon {
+	font-size: 2rem;
+	max-width: 35px;
+}
+
+.project-links .social-text {
+	padding-left: 10px;
+	font-size: 1.4rem;
+}
+
+.right-project-container figure {
+    margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+	.pd-title {
+		width: 100% !important;
+	}
+
+	.pd-subtitle {
+		width: 100% !important;
+	}
+}

@@ -1,5 +1,11 @@
 @import "../../../data/styles.css";
 
+.works {
+	display: flex;
+	flex-direction: row;
+	column-gap: 50px;
+}
+
 .works-body {
 	margin-bottom: 10px;
 }

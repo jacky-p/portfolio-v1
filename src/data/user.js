@@ -33,10 +33,43 @@ const INFO = {
 		{
 			title: "NEST Meet",
 			description:
-				"Application that randomly schedules meetings in pairs given a list of indiviuals and applied filters.",
+				"A web-based application that automates intern schedule generation based on customizable filters, such as department, location, and unique pairing. Designed to streamline intern assignments while ensuring diversity in pairings.",
+			techStack: {
+				frontend: "HTML, CSS, JavaScript",
+				logicAlgorithm: "JavaScript for dynamic schedule generation",
+				backend: "(Optional Future Enhancements): Firebase/Google Sheets for data storage"
+			},
+			motivation: "Manually scheduling interns while maintaining balanced and diverse pairings across departments and locations can be time-consuming and error-prone. This project aims to automate the process, ensuring fair distribution while reducing scheduling conflicts.",
+			features: ["Upload or input a list of interns", "Filter schedules by department, location, or both", "Ensure interns are uniquely paired across departments/locations", "Dynamically generate and display schedules in a user-friendly format", "Export schedules as an CSV"],
+			challenges: [
+				{
+					challenge: "Ensuring unique pairings",
+					description: "Used a combination of sorting and randomization algorithms to prevent duplicate pairings while meeting filter criteria."
+				},
+				{
+					challenge: "Scalability",
+					description: "Designed logic to accommodate varying numbers of interns and customizable parameters.",
+				}
+			],
+			impact: ["Eliminates manual scheduling efforts.", "Ensures balanced and diverse intern interactions.", "Provides a flexible and efficient scheduling system."],
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://bizznest.github.io/salinas-bizznest-scheduler/",
+			gitRepo: "https://github.com/",
+			images: [
+				{
+					src: "nestmeet1.png",
+					caption: "Interns must be selected to generate pairings"
+				},
+				{
+					src: "nestmeet2.png",
+					caption: "Users can select any combination of pairings"
+				},
+				{
+					src: "nestmeet3.png",
+					caption: "Edit pairings after they have been generated"
+				},
+			],
 		},
 
 		{

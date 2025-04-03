@@ -18,6 +18,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/homepage.css";
+import ProjectCarousel from "./carousel";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -99,8 +100,9 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
+										<div className="bg-image"></div>
 										<img
-											src="homeProfile.jpg"
+											src="jp-subject2.png"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -143,7 +145,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<ProjectCarousel />
 						</div>
 
 						<div className="homepage-after-title">

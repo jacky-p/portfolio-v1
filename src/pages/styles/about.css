@@ -25,7 +25,7 @@
 	display: flex;
 }
 
-.about-right-side {
+.about-left-side {
 	flex-basis: 900px;
 }
 
@@ -37,7 +37,7 @@
 	width: 80% !important;
 }
 
-.about-left-side {
+.about-right-side {
 	display: flex;
 	flex-direction: column;
 	flex-basis: 300px;

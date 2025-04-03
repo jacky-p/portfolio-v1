@@ -12,7 +12,44 @@ import INFO from "../../data/user";
 
 import "./styles/socials.css";
 
-const Socials = () => {
+const Socials = ({orientation = "column", children}) => {
+	if (orientation != "column" && orientation != "row") {
+		throw new Error("Not Valid Input for orientation")
+	}
+    return (
+      <div style={{display: "flex", flexDirection: `${orientation}`}}>
+        {children}
+      </div>
+    )
+  }
+  
+  const SocialIcon = ({icon, label, link}) => {
+    return (
+		<div className="social">
+			<a 
+				href={link} 
+				target="_blank" 
+				rel="noreferrer"
+			>
+				<div className="social-icon">
+					<FontAwesomeIcon
+						icon={icon}
+						className="social-icon"
+					/>
+				</div>
+				<div className="social-text">{label}</div>
+			</a>
+		</div>
+
+	
+    )
+  }
+
+  Socials.SocialIcon = SocialIcon
+  export default Socials
+ 
+
+/*const Socials = () => {
 	return (
 		<div className="socials">
 			<div className="social">
@@ -62,4 +99,4 @@ const Socials = () => {
 	);
 };
 
-export default Socials;
+export default Socials;*/
