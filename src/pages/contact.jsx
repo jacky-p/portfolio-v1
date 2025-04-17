@@ -10,6 +10,9 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
+import ContactForm from "../components/contact/contactForm";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
 	useEffect(() => {
@@ -44,38 +47,43 @@ const Contact = () => {
 						</div>
 
 						<div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at
-							&nbsp;{" "}
-							<a href={`mailto:${INFO.main.email}`}>
+							Thank you for your interest in reaching out. I
+							greatly value your feedback, questions, and
+							suggestions. Should you have any specific inquiries
+							or comments, please feel free to email me directly
+							at{" "}
+							<a
+								className="email-link"
+								href={`mailto:${INFO.main.email}`}
+							>
 								{INFO.main.email}
 							</a>
-							. I make an effort to respond to all messages within
-							24 hours, although it may take me longer during busy
-							periods. Alternatively, you can use the contact form
-							on my website to get in touch. Simply fill out the
-							required fields and I'll get back to you as soon as
-							possible. Finally, if you prefer to connect on
-							social media, you can find me on{" "}
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{INFO.socials.instagram}
-							</a>
-							. I post regular updates and engage with my
-							followers there, so don't hesitate to reach out.
-							Thanks again for your interest, and I look forward
-							to hearing from you!
 						</div>
 					</div>
 
 					<div className="socials-container">
+						<div className="contact-socials-subtitle">
+							<h3>
+								Contact Me
+								<br />
+								through
+								<br />
+								Socials!
+							</h3>
+						</div>
 						<div className="contact-socials">
-							<Socials />
+							<Socials>
+								<Socials.SocialIcon
+									icon={faGithub}
+									link={INFO.socials.github}
+									label={"GitHub"}
+								/>
+								<Socials.SocialIcon
+									icon={faLinkedin}
+									link={INFO.socials.linkedin}
+									label={"LinkedIn"}
+								/>
+							</Socials>
 						</div>
 					</div>
 

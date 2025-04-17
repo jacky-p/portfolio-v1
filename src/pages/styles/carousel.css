@@ -9,6 +9,7 @@
 
 .slide-container {
     padding: 100px;
+    padding-bottom: 0px;
 }
 
 
@@ -25,4 +26,8 @@
   /* Change color of active pagination dot */
 .swiper-pagination-bullet-active {
     background: pink;  /* Orange color for the active dot */
+}
+
+.swiper-pagination {
+  position: relative;
 }

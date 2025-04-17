@@ -29,7 +29,7 @@
 }
 
 .pd-main-container h2 {
-    margin: 20px 0 20px 0;
+    margin: 0px 0 20px 0;
 }
 
 .pd-container {
@@ -43,6 +43,9 @@
 
 .left-project-container {
     grid-area: left;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
     padding-right: 20px;
 }
 
@@ -121,6 +124,12 @@
 
 .right-project-container figure {
     margin: 0;
+}
+
+.impact-container {
+	text-align: center;
+	padding: 10px;
+	
 }
 
 

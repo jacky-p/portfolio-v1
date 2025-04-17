@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { SwiperSlide } from "swiper/react";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-	faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -18,7 +16,8 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/homepage.css";
-import ProjectCarousel from "./carousel";
+import Project from "../components/projects/project";
+import Carousel from "./carousel";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -145,7 +144,30 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<ProjectCarousel />
+							<Carousel
+								slidesPerView={1}
+								delay={3500}
+								showNav={true}
+							>
+								{INFO.projects.map((project, index) => (
+									<SwiperSlide
+										key={index}
+										className="w-64 p-2 bg-white rounded-lg shadow-lg text-center"
+									>
+										<div className="slide-container">
+											<Project
+												logo={project.logo}
+												title={project.title}
+												description={
+													project.description
+												}
+												linkText={project.linkText}
+												link={project.link}
+											/>
+										</div>
+									</SwiperSlide>
+								))}
+							</Carousel>
 						</div>
 
 						<div className="homepage-after-title">
