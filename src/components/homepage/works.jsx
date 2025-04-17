@@ -1,5 +1,5 @@
 import React from "react";
-import { faBriefcase, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 
@@ -8,7 +8,7 @@ import "./styles/works.css";
 const Works = () => {
 	return (
 		<div className="works">
-			<div className="left-works" >
+			<div className="left-works">
 				<Card
 					icon={faBriefcase}
 					title="Experience"
@@ -24,7 +24,9 @@ const Works = () => {
 								<div className="work-subtitle">
 									Web Development Intern
 								</div>
-								<div className="work-duration">2024 - Present</div>
+								<div className="work-duration">
+									2024 - Present
+								</div>
 							</div>
 
 							<div className="work">
@@ -33,17 +35,21 @@ const Works = () => {
 									alt="ucberkeley"
 									className="work-image"
 								/>
-								<div className="work-title">UC Berkeley EECS Department</div>
+								<div className="work-title">
+									UC Berkeley EECS Department
+								</div>
 								<div className="work-subtitle">
 									Academic Intern
 								</div>
-								<div className="work-duration">Jan 2022 - Dec 2022</div>
+								<div className="work-duration">
+									Jan 2022 - Dec 2022
+								</div>
 							</div>
 						</div>
 					}
-				/>	
+				/>
 			</div>
-			<div className="right-works" >
+			<div className="right-works">
 				<Card
 					icon={faBriefcase}
 					title="Experience"
@@ -59,7 +65,9 @@ const Works = () => {
 								<div className="work-subtitle">
 									Web Development Intern
 								</div>
-								<div className="work-duration">2024 - Present</div>
+								<div className="work-duration">
+									2024 - Present
+								</div>
 							</div>
 
 							<div className="work">
@@ -68,18 +76,20 @@ const Works = () => {
 									alt="ucberkeley"
 									className="work-image"
 								/>
-								<div className="work-title">UC Berkeley EECS Department</div>
+								<div className="work-title">
+									UC Berkeley EECS Department
+								</div>
 								<div className="work-subtitle">
 									Academic Intern
 								</div>
-								<div className="work-duration">Jan 2022 - Dec 2022</div>
+								<div className="work-duration">
+									Jan 2022 - Dec 2022
+								</div>
 							</div>
 						</div>
 					}
-				/>	
+				/>
 			</div>
-			
-			
 		</div>
 	);
 };

@@ -144,6 +144,7 @@ const ProjectPage = () => {
 									<img
 										className="pd-image img1"
 										src={image.src}
+										alt="project demo"
 									/>
 									<figcaption>{image.caption}</figcaption>
 								</figure>
