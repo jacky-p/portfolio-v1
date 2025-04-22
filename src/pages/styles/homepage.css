@@ -97,7 +97,7 @@
 
 .homepage-works {
 	flex-basis: 600px;
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 .bg-image {
@@ -111,6 +111,15 @@
 	height: 370px;
 	border-radius: 50%;
 	animation: spin 4000ms infinite linear;
+}
+
+.homepage-title h4 {
+	margin: 0px;
+}
+
+.intro-name {
+	margin: 0px;
+	padding-top: 25px;
 }
 
 @keyframes spin {

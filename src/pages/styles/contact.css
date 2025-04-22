@@ -1,3 +1,7 @@
+.contact-page {
+	height: 100vh;
+}
+
 .contact-logo-container {
 	display: flex;
 	justify-content: left;
@@ -28,9 +32,20 @@
 .socials-container {
 	display: flex;
 	flex-direction: row;
-	column-gap: 20px;
 	justify-content: center;
 	align-items: center;
+	padding: 70px 0px;
+}
+
+.socials-card {
+	display: flex;
+	flex-direction: row;
+	column-gap: 30px;
+	justify-content: center;
+	align-items: center;
+	background-color: #f1e6867e;
+	border-radius: 25px;
+	width: 30%;
 }
 
 .contact-socials-subtitle {
@@ -50,4 +65,9 @@
 .email-link {
 	color: var(--link-color);
 	font-weight: bolder;
+}
+
+.contact-socials .social-icon {
+	font-size: 1.4rem;
+	padding: 2px 0px;
 }

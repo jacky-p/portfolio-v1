@@ -17,6 +17,7 @@ import SEO from "../data/seo";
 import "./styles/homepage.css";
 import Project from "../components/projects/project";
 import Carousel from "./carousel";
+import Intro from "../components/homepage/intro";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -87,7 +88,8 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									{/* {INFO.homepage.title} */}
+									<Intro />
 								</div>
 
 								<div className="subtitle homepage-subtitle">

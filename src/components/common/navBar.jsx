@@ -10,7 +10,7 @@ const NavBar = (props) => {
 		<React.Fragment>
 			<div className="nav-container">
 				<nav className="navbar">
-					<div className="nav-background">
+					<div className="nav-background borderYtoX">
 						<ul className="nav-list">
 							<li
 								className={

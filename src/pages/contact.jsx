@@ -30,7 +30,7 @@ const Contact = () => {
 				/>
 			</Helmet>
 
-			<div className="page-content">
+			<div className="page-content contact-page">
 				<NavBar active="contact" />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
@@ -60,28 +60,30 @@ const Contact = () => {
 					</div>
 
 					<div className="socials-container">
-						<div className="contact-socials-subtitle">
-							<h3>
-								Contact Me
-								<br />
-								through
-								<br />
-								Socials!
-							</h3>
-						</div>
-						<div className="contact-socials">
-							<Socials>
-								<Socials.SocialIcon
-									icon={faGithub}
-									link={INFO.socials.github}
-									label={"GitHub"}
-								/>
-								<Socials.SocialIcon
-									icon={faLinkedin}
-									link={INFO.socials.linkedin}
-									label={"LinkedIn"}
-								/>
-							</Socials>
+						<div className="socials-card">
+							<div className="contact-socials-subtitle">
+								<h3>
+									Contact Me
+									<br />
+									through
+									<br />
+									Socials!
+								</h3>
+							</div>
+							<div className="contact-socials">
+								<Socials>
+									<Socials.SocialIcon
+										icon={faGithub}
+										link={INFO.socials.github}
+										label={"GitHub"}
+									/>
+									<Socials.SocialIcon
+										icon={faLinkedin}
+										link={INFO.socials.linkedin}
+										label={"LinkedIn"}
+									/>
+								</Socials>
+							</div>
 						</div>
 					</div>
 
