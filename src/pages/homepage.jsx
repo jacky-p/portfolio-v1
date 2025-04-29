@@ -172,7 +172,7 @@ const Homepage = () => {
 													project.description
 												}
 												linkText={project.linkText}
-												link={project.link}
+												link={`/project/${project.slug}`}
 											/>
 										</div>
 									</SwiperSlide>

@@ -14,8 +14,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Socials from "../components/about/socials";
 import Carousel from "./carousel";
 import { SwiperSlide } from "swiper/react";
+import { useParams } from "react-router-dom";
 
 const ProjectPage = () => {
+	const { slug } = useParams();
+	const project = INFO.projects.find((p) => p.slug === slug);
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -45,11 +48,11 @@ const ProjectPage = () => {
 					<div className="pd-main-container">
 						<div className="top-project-container">
 							<div className="title pd-title">
-								{INFO.projects[0].title}
+								{project.title}
 							</div>
 
 							<div className="pd-text pd-subtitle">
-								{INFO.projects[0].description}
+								{project.description}
 							</div>
 						</div>
 						<div className="left-project-container">
@@ -57,55 +60,50 @@ const ProjectPage = () => {
 								<h2 className="techTitle">Tech Stack</h2>
 								<p>
 									<strong>Frontend:</strong>{" "}
-									{INFO.projects[0].techStack.frontend} <br />
+									{project.techStack.frontend} <br />
 									<strong>Logic & Algorithm:</strong>{" "}
-									{INFO.projects[0].techStack.logicAlgorithm}{" "}
-									<br />
+									{project.techStack.logicAlgorithm} <br />
 									<strong>Backend:</strong>{" "}
-									{INFO.projects[0].techStack.backend}
+									{project.techStack.backend}
 								</p>
 							</div>
 
 							<div className="feature-container pd-text">
 								<h2 className="featureTitle">Features</h2>
-								{INFO.projects[0].features.map(
-									(feature, index) => (
-										<div
-											className="feature-list list-points"
-											key={index}
-										>
-											<ul>
-												<li>{feature}</li>
-											</ul>
-										</div>
-									)
-								)}
+								{project.features.map((feature, index) => (
+									<div
+										className="feature-list list-points"
+										key={index}
+									>
+										<ul>
+											<li>{feature}</li>
+										</ul>
+									</div>
+								))}
 							</div>
 
 							<div className="motivation-container pd-text">
 								<h2 className="motivationTitle">Motivation</h2>
-								{INFO.projects[0].motivation}
+								{project.motivation}
 							</div>
 
 							<div className="challenges-container pd-text">
 								<h2 className="challengesTitle">Challenges</h2>
-								{INFO.projects[0].challenges.map(
-									(challenge, index) => (
-										<div
-											className="challenge-list list-points"
-											key={index}
-										>
-											<ul>
-												<li>
-													<strong>
-														{challenge.challenge}:{" "}
-													</strong>{" "}
-													{challenge.description}
-												</li>
-											</ul>
-										</div>
-									)
-								)}
+								{project.challenges.map((challenge, index) => (
+									<div
+										className="challenge-list list-points"
+										key={index}
+									>
+										<ul>
+											<li>
+												<strong>
+													{challenge.challenge}:{" "}
+												</strong>{" "}
+												{challenge.description}
+											</li>
+										</ul>
+									</div>
+								))}
 							</div>
 
 							<div className="impact-container pd-text">
@@ -115,18 +113,16 @@ const ProjectPage = () => {
 									delay={3500}
 									showNav={false}
 								>
-									{INFO.projects[0].impact.map(
-										(point, index) => (
-											<SwiperSlide
-												key={index}
-												className="feat-slide w-64 p-4 bg-white rounded-lg shadow-lg text-center"
-											>
-												<div className="feat-slide-container">
-													<p>{point}</p>
-												</div>
-											</SwiperSlide>
-										)
-									)}
+									{project.impact.map((point, index) => (
+										<SwiperSlide
+											key={index}
+											className="feat-slide w-64 p-4 bg-white rounded-lg shadow-lg text-center"
+										>
+											<div className="feat-slide-container">
+												<p>{point}</p>
+											</div>
+										</SwiperSlide>
+									))}
 								</Carousel>
 							</div>
 						</div>
@@ -139,7 +135,7 @@ const ProjectPage = () => {
 								Your browser does not support the video tag.
 							</video>
 
-							{INFO.projects[0].images.map((image, index) => (
+							{project.images.map((image, index) => (
 								<figure>
 									<img
 										className="pd-image img1"
@@ -157,12 +153,12 @@ const ProjectPage = () => {
 									<Socials>
 										<Socials.SocialIcon
 											icon={faGithub}
-											link={INFO.projects[0].gitRepo}
+											link={project.gitRepo}
 											label={"Link to Github Repo"}
 										/>
 										<Socials.SocialIcon
 											icon={faLink}
-											link={INFO.projects[0].link}
+											link={project.link}
 											label={"Demo Link"}
 										/>
 									</Socials>

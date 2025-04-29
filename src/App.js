@@ -16,14 +16,14 @@ import "./app.css";
 import ProjectPage from "./pages/projectDescription";
 
 function App() {
-	//Google Analytics 
+	//Google Analytics
 	/*useEffect(() => {
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);
 		}
-	}, []);*/ 
+	}, []);*/
 
-	//line 30: removed <Route path="/articles" element={<Articles />} /> 
+	//line 30: removed <Route path="/articles" element={<Articles />} />
 	return (
 		<div className="App">
 			<Routes>
@@ -34,6 +34,7 @@ function App() {
 				<Route path="/articles" element={<ProjectPage />} />
 				<Route path="/article/:slug" element={<ReadArticle />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/project/:slug" element={<ProjectPage />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>

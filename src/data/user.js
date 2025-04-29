@@ -29,6 +29,7 @@ const INFO = {
 
 	projects: [
 		{
+			slug: "proj1",
 			title: "NEST Meet",
 			description:
 				"A web-based application that automates intern schedule generation based on customizable filters, such as department, location, and unique pairing. Designed to streamline intern assignments while ensuring diversity in pairings.",
@@ -85,44 +86,45 @@ const INFO = {
 		},
 
 		{
+			slug: "proj2",
 			title: "Doula Page",
 			description:
 				"A custom-built page to showcase and filter doula profiles with multi-language support, providing a seamless user experience across all devices.",
 			techStack: {
-				frontend: "HTML, CSS, JavaScript",
-				logicAlgorithm: "JavaScript for dynamic schedule generation",
-				backend:
-					"(Optional Future Enhancements): Firebase/Google Sheets for data storage",
+				frontend: "WordPress, HTML, CSS, JavaScript",
+				logicAlgorithm: "Custom Filtering Algorithm (JavaScript + PHP)",
+				backend: "WordPress CMS, Custom PHP",
 			},
 			motivation:
-				"Manually scheduling interns while maintaining balanced and diverse pairings across departments and locations can be time-consuming and error-prone. This project aims to automate the process, ensuring fair distribution while reducing scheduling conflicts.",
+				"The doula organization needed a way to help users easily find the right doula based on multiple filtering options while ensuring accessibility for both English and Spanish speakers. The organization also required a seamless integration into an existing WordPress site, which had numerous plugins and pre-built elements.",
 			features: [
-				"Upload or input a list of interns",
-				"Filter schedules by department, location, or both",
-				"Ensure interns are uniquely paired across departments/locations",
-				"Dynamically generate and display schedules in a user-friendly format",
-				"Export schedules as an CSV",
+				"Custom Doula Filtering",
+				"Search Bar",
+				"Multi-language Video Support",
+				"Responsive Design",
+				"UI/UX Collaboration",
 			],
 			challenges: [
 				{
-					challenge: "Ensuring unique pairings",
+					challenge: "Onboarding to an Existing Website",
 					description:
-						"Used a combination of sorting and randomization algorithms to prevent duplicate pairings while meeting filter criteria.",
+						"The website had been pre-built using various plugins, which required adapting our custom features to work alongside them.",
 				},
 				{
-					challenge: "Scalability",
+					challenge: "Custom Filtering Algorithm",
 					description:
-						"Designed logic to accommodate varying numbers of interns and customizable parameters.",
+						"We developed a custom algorithm for filtering doulas, overcoming limitations of existing plugins and ensuring tailored functionality.",
 				},
 			],
 			impact: [
-				"Eliminates manual scheduling efforts.",
-				"Ensures balanced and diverse intern interactions.",
-				"Provides a flexible and efficient scheduling system.",
+				"Multilingual interface to find the right doula.",
+				"Provides an easy to use interface.",
+				"Client was thrilled with the custom features",
+				"Helped the organization better serve their diverse audience",
 			],
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
 			linkText: "View Project",
-			link: "https://bizznest.github.io/salinas-bizznest-scheduler/",
+			link: "https://parentingconnectionmc.org/doula-hub/",
 			gitRepo: "https://github.com/",
 			images: [
 				{
