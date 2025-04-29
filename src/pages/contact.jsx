@@ -39,50 +39,52 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="contact-container">
-						<div className="title contact-title">
-							Let's Get in Touch: Ways to Connect with Me
-						</div>
-
-						<div className="subtitle contact-subtitle">
-							Thank you for your interest in reaching out. I
-							greatly value your feedback, questions, and
-							suggestions. Should you have any specific inquiries
-							or comments, please feel free to email me directly
-							at{" "}
-							<a
-								className="email-link"
-								href={`mailto:${INFO.main.email}`}
-							>
-								{INFO.main.email}
-							</a>
-						</div>
-					</div>
-
-					<div className="socials-container">
-						<div className="socials-card">
-							<div className="contact-socials-subtitle">
-								<h3>
-									Contact Me
-									<br />
-									through
-									<br />
-									Socials!
-								</h3>
+					<div className="contact-content">
+						<div className="contact-container">
+							<div className="title contact-title">
+								Let's Get in Touch: Ways to Connect with Me
 							</div>
-							<div className="contact-socials">
-								<Socials>
-									<Socials.SocialIcon
-										icon={faGithub}
-										link={INFO.socials.github}
-										label={"GitHub"}
-									/>
-									<Socials.SocialIcon
-										icon={faLinkedin}
-										link={INFO.socials.linkedin}
-										label={"LinkedIn"}
-									/>
-								</Socials>
+
+							<div className="subtitle contact-subtitle">
+								Thank you for your interest in reaching out. I
+								greatly value your feedback, questions, and
+								suggestions. Should you have any specific
+								inquiries or comments, please feel free to email
+								me directly at{" "}
+								<a
+									className="email-link"
+									href={`mailto:${INFO.main.email}`}
+								>
+									{INFO.main.email}
+								</a>
+							</div>
+						</div>
+
+						<div className="socials-container">
+							<div className="socials-card">
+								<div className="contact-socials-subtitle">
+									<h3>
+										Contact Me
+										<br />
+										through
+										<br />
+										Socials!
+									</h3>
+								</div>
+								<div className="contact-socials">
+									<Socials>
+										<Socials.SocialIcon
+											icon={faGithub}
+											link={INFO.socials.github}
+											label={"GitHub"}
+										/>
+										<Socials.SocialIcon
+											icon={faLinkedin}
+											link={INFO.socials.linkedin}
+											label={"LinkedIn"}
+										/>
+									</Socials>
+								</div>
 							</div>
 						</div>
 					</div>

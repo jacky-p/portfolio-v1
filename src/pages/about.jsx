@@ -57,7 +57,7 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="about.jpg"
+											src="school-pic.jpg"
 											alt="about"
 											className="about-image"
 										/>
@@ -65,18 +65,27 @@ const About = () => {
 								</div>
 
 								<div className="about-socials">
-									
 									<Socials>
-                                        <Socials.SocialIcon icon={faGithub} link={INFO.socials.github} label={"Follow on GitHub"} />
-                                        <Socials.SocialIcon icon={faLinkedin} link={INFO.socials.linkedin} label={"Follow on LinkedIn"} />
-										<Socials.SocialIcon icon={faEnvelope} link={INFO.main.email} label={INFO.main.email} />
-                                    </Socials>
+										<Socials.SocialIcon
+											icon={faLinkedin}
+											link={INFO.socials.linkedin}
+											label={"Follow on LinkedIn"}
+										/>
+										<Socials.SocialIcon
+											icon={faGithub}
+											link={INFO.socials.github}
+											label={"Follow on GitHub"}
+										/>
+										<Socials.SocialIcon
+											icon={faEnvelope}
+											link={INFO.main.email}
+											label={INFO.main.email}
+										/>
+									</Socials>
 								</div>
 							</div>
 						</div>
-						<div className="about-socials-mobile">
-							
-						</div>
+						<div className="about-socials-mobile"></div>
 					</div>
 					<div className="page-footer">
 						<Footer />

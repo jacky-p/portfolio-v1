@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { SwiperSlide } from "swiper/react";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import {
+	faGraduationCap,
+	faLaptop,
+	faLaptopCode,
+	faMailBulk,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -18,6 +23,12 @@ import "./styles/homepage.css";
 import Project from "../components/projects/project";
 import Carousel from "./carousel";
 import Intro from "../components/homepage/intro";
+import {
+	VerticalTimeline,
+	VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import AnimatedTitle from "../components/common/animatedTitle";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -110,7 +121,6 @@ const Homepage = () => {
 								</div>
 							</div>
 						</div>
-
 						<div className="homepage-socials">
 							<a
 								href={INFO.socials.github}
@@ -143,7 +153,6 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
 						<div className="homepage-projects">
 							<Carousel
 								slidesPerView={1}
@@ -171,11 +180,134 @@ const Homepage = () => {
 							</Carousel>
 						</div>
 
-						<div className="homepage-after-title">
-							<div className="homepage-works">
-								<Works />
-							</div>
+						<div className="experience-header">
+							<h1>Experience & Milestones</h1>
 						</div>
+
+						<VerticalTimeline lineColor="rgb(255 246 174 / 51%)">
+							<VerticalTimelineElement
+								className="vertical-timeline-element--work"
+								contentStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								contentArrowStyle={{
+									borderRight:
+										"7px solid  rgba(255, 246, 174, 1)",
+								}}
+								date="August 2024 - Present"
+								iconStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								icon={<FontAwesomeIcon icon={faLaptopCode} />}
+							>
+								<h3 className="vertical-timeline-element-title">
+									Web Developer
+								</h3>
+								<h4 className="vertical-timeline-element-subtitle">
+									Digital NEST
+								</h4>
+								<p>
+									Built responsive websites, debugged existing
+									code, and collaborated in Agile sprints
+									using Git and code reviews.
+								</p>
+							</VerticalTimelineElement>
+							<VerticalTimelineElement
+								className="vertical-timeline-element--work"
+								contentStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								contentArrowStyle={{
+									borderRight:
+										"7px solid  rgba(255, 246, 174, 1)",
+								}}
+								date="May 2024 - June 2024"
+								iconStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								icon={<FontAwesomeIcon icon={faLaptopCode} />}
+							>
+								<h3 className="vertical-timeline-element-title">
+									IT Support
+								</h3>
+								<h4 className="vertical-timeline-element-subtitle">
+									Good Shepherd School
+								</h4>
+								<p>
+									Delivered on-site IT support for staff,
+									troubleshooting devices and systems while
+									making technical solutions easy to
+									understand.
+								</p>
+							</VerticalTimelineElement>
+							<VerticalTimelineElement
+								className="vertical-timeline-element--work"
+								contentStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								contentArrowStyle={{
+									borderRight:
+										"7px solid  rgba(255, 246, 174, 1)",
+								}}
+								date="May 2024 - June 2024"
+								iconStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								icon={
+									<FontAwesomeIcon icon={faGraduationCap} />
+								}
+							>
+								<h3 className="vertical-timeline-element-title">
+									B.S. in Electrical Engineering and Computer
+									Science
+								</h3>
+								<h4 className="vertical-timeline-element-subtitle">
+									University of California, Berkeley
+								</h4>
+								<p>
+									Graduated with a BS in Electrical
+									Engineering and Computer Science, marking
+									the completion of my academic journey and
+									the beginning of my professional career in
+									tech.
+								</p>
+							</VerticalTimelineElement>
+							<VerticalTimelineElement
+								className="vertical-timeline-element--work"
+								contentStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								contentArrowStyle={{
+									borderRight:
+										"7px solid  rgba(255, 246, 174, 1)",
+								}}
+								date="January 2022 - December 2022"
+								iconStyle={{
+									background: "rgba(255, 246, 174, 1)",
+									color: "#000",
+								}}
+								icon={<FontAwesomeIcon icon={faLaptopCode} />}
+							>
+								<h3 className="vertical-timeline-element-title">
+									Computer Architecture Lab Teaching Assistant
+								</h3>
+								<h4 className="vertical-timeline-element-subtitle">
+									UC Berkeley EECS Department
+								</h4>
+								<p>
+									Led lab sessions and provided C programming
+									support, helping students grasp computer
+									architecture concepts and debug assignments.
+								</p>
+							</VerticalTimelineElement>
+						</VerticalTimeline>
 
 						<div className="page-footer">
 							<Footer />
