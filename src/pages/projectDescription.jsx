@@ -29,7 +29,7 @@ const ProjectPage = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Project | ${INFO.projects.title}`}</title>
+				<title>{`Project | ${project.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
