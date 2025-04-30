@@ -27,14 +27,14 @@ function App() {
 	return (
 		<div className="App">
 			<Routes>
-				<Route index element={<Homepage />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/caro" element={<Caro />} />
-				<Route path="/articles" element={<ProjectPage />} />
-				<Route path="/article/:slug" element={<ReadArticle />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/project/:slug" element={<ProjectPage />} />
+				<Route path="" element={<Homepage />} />
+				<Route path="about" element={<About />} />
+				<Route path="projects" element={<Projects />} />
+				<Route path="caro" element={<Caro />} />
+				<Route path="articles" element={<ProjectPage />} />
+				<Route path="article/:slug" element={<ReadArticle />} />
+				<Route path="contact" element={<Contact />} />
+				<Route path="project/:slug" element={<ProjectPage />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
