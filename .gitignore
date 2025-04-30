@@ -19,6 +19,7 @@
 .env.production.local
 
 /public/nestmeet-demo.mp4 
+/public/doulahub-demo.mp4
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

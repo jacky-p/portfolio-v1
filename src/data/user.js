@@ -131,21 +131,22 @@ const INFO = {
 			link: "https://parentingconnectionmc.org/doula-hub/",
 			gitRepo: "https://github.com/",
 			video: {
-				src: "/nestmeet-demo.mp4",
+				src: "/doulahub-demo.mp4",
 				type: "video/mp4",
 			},
 			images: [
 				{
-					src: "nestmeet1.png",
-					caption: "Interns must be selected to generate",
+					src: "/doulahub1.png",
+					caption: "Website page where the user can find a Doula",
 				},
 				{
-					src: "nestmeet2.png",
-					caption: "Users can select any combination of pairings",
+					src: "/doulahub2.png",
+					caption: "Filtering component to filter the Doulas",
 				},
 				{
-					src: "nestmeet3.png",
-					caption: "Edit pairings after they have been generated",
+					src: "/doulahub3.png",
+					caption:
+						"Bilingual capabilites, media in the chosen language is displayed",
 				},
 			],
 		},
