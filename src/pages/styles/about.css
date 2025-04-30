@@ -76,6 +76,7 @@
 
 	.about-main {
 		flex-direction: column;
+		row-gap: 80px;
 	}
 
 	.about-subtitle {
@@ -85,11 +86,13 @@
 	.about-left-side {
 		flex-basis: 100%;
 		order: 1;
+		text-align: -webkit-center;
 	}
 
 	.about-right-side {
 		flex-basis: 100%;
 		order: 2;
+		align-items: center;
 	}
 
 	.about-image-container {
@@ -108,7 +111,7 @@
 
 @media (max-width: 600px) {
 	.about-container {
-		padding-top: 60px;
+		padding-top: 100px;
 	}
 
 	.about-image-container {

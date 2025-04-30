@@ -4,7 +4,6 @@ import { SwiperSlide } from "swiper/react";
 
 import {
 	faGraduationCap,
-	faLaptop,
 	faLaptopCode,
 	faMailBulk,
 } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +13,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Works from "../components/homepage/works";
+//import Works from "../components/homepage/works";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -28,7 +27,6 @@ import {
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import AnimatedTitle from "../components/common/animatedTitle";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -254,7 +252,7 @@ const Homepage = () => {
 									borderRight:
 										"7px solid  rgba(255, 246, 174, 1)",
 								}}
-								date="May 2024 - June 2024"
+								date="May 2024"
 								iconStyle={{
 									background: "rgba(255, 246, 174, 1)",
 									color: "#000",
