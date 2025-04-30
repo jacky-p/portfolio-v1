@@ -8,8 +8,8 @@ const INFO = {
 
 	socials: {
 		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		github: "https://github.com/jacky-p",
+		linkedin: "www.linkedin.com/in/jacquelinelizbethperez",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
@@ -68,7 +68,7 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://bizznest.github.io/salinas-bizznest-scheduler/",
-			gitRepo: "https://github.com/",
+			gitRepo: "https://github.com/jacky-p/dn-scheduler",
 			video: {
 				src: "/nestmeet-demo.mp4",
 				type: "video/mp4",
@@ -129,7 +129,7 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
 			linkText: "View Project",
 			link: "https://parentingconnectionmc.org/doula-hub/",
-			gitRepo: "https://github.com/",
+			gitRepo: "https://github.com/jacky-p/pc_filtering_plugin",
 			video: {
 				src: "/doulahub-demo.mp4",
 				type: "video/mp4",
