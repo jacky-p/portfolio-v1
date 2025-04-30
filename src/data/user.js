@@ -75,7 +75,7 @@ const INFO = {
 			},
 			images: [
 				{
-					src: "/nestmeet1.png",
+					src: "/portfolio-v1/nestmeet1.png",
 					caption: "Interns must be selected to generate",
 				},
 				{
