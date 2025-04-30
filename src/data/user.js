@@ -70,7 +70,7 @@ const INFO = {
 			link: "https://bizznest.github.io/salinas-bizznest-scheduler/",
 			gitRepo: "https://github.com/jacky-p/dn-scheduler",
 			video: {
-				src: "/nestmeet-demo.mp4",
+				src: "/portfolio-v1/nestmeet-demo.mp4",
 				type: "video/mp4",
 			},
 			images: [
