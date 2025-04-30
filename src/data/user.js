@@ -131,7 +131,7 @@ const INFO = {
 			link: "https://parentingconnectionmc.org/doula-hub/",
 			gitRepo: "https://github.com/jacky-p/pc_filtering_plugin",
 			video: {
-				src: "/doulahub-demo.mp4",
+				src: "/nestmeet-demo.mp4",
 				type: "video/mp4",
 			},
 			images: [
