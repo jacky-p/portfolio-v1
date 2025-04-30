@@ -3,7 +3,7 @@ const INFO = {
 		title: "JP Portfolio",
 		name: "Jacqueline P.",
 		email: "jackyyp2402@gmail.com",
-		logo: "../logo.png",
+		logo: "/portfolio-v1/logo.png",
 	},
 
 	socials: {
@@ -79,11 +79,11 @@ const INFO = {
 					caption: "Interns must be selected to generate",
 				},
 				{
-					src: "/nestmeet2.png",
+					src: "/portfolio-v1/nestmeet2.png",
 					caption: "Users can select any combination of pairings",
 				},
 				{
-					src: "/nestmeet3.png",
+					src: "/portfolio-v1/nestmeet3.png",
 					caption: "Edit pairings after they have been generated",
 				},
 			],
@@ -131,20 +131,20 @@ const INFO = {
 			link: "https://parentingconnectionmc.org/doula-hub/",
 			gitRepo: "https://github.com/jacky-p/pc_filtering_plugin",
 			video: {
-				src: "/doulahub-demo.mp4",
+				src: "/portfolio-v1/doulahub-demo.mp4",
 				type: "video/mp4",
 			},
 			images: [
 				{
-					src: "/doulahub1.png",
+					src: "/portfolio-v1/doulahub1.png",
 					caption: "Website page where the user can find a Doula",
 				},
 				{
-					src: "/doulahub2.png",
+					src: "/portfolio-v1/doulahub2.png",
 					caption: "Filtering component to filter the Doulas",
 				},
 				{
-					src: "/doulahub3.png",
+					src: "/portfolio-v1/doulahub3.png",
 					caption:
 						"Bilingual capabilites, media in the chosen language is displayed",
 				},
