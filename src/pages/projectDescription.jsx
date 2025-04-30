@@ -19,6 +19,7 @@ import { useParams } from "react-router-dom";
 const ProjectPage = () => {
 	const { slug } = useParams();
 	const project = INFO.projects.find((p) => p.slug === slug);
+	console.log(project.images);
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -129,14 +130,14 @@ const ProjectPage = () => {
 						<div className="right-project-container">
 							<video className="pd-vid" autoPlay loop muted>
 								<source
-									src="nestmeet-demo.mp4"
+									src={project.video.src}
 									type="video/mp4"
 								/>
 								Your browser does not support the video tag.
 							</video>
 
 							{project.images.map((image, index) => (
-								<figure>
+								<figure key={index}>
 									<img
 										className="pd-image img1"
 										src={image.src}

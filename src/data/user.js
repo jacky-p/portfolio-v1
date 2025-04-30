@@ -69,17 +69,21 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://bizznest.github.io/salinas-bizznest-scheduler/",
 			gitRepo: "https://github.com/",
+			video: {
+				src: "/nestmeet-demo.mp4",
+				type: "video/mp4",
+			},
 			images: [
 				{
-					src: "nestmeet1.png",
+					src: "/nestmeet1.png",
 					caption: "Interns must be selected to generate",
 				},
 				{
-					src: "nestmeet2.png",
+					src: "/nestmeet2.png",
 					caption: "Users can select any combination of pairings",
 				},
 				{
-					src: "nestmeet3.png",
+					src: "/nestmeet3.png",
 					caption: "Edit pairings after they have been generated",
 				},
 			],
@@ -126,6 +130,10 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://parentingconnectionmc.org/doula-hub/",
 			gitRepo: "https://github.com/",
+			video: {
+				src: "/nestmeet-demo.mp4",
+				type: "video/mp4",
+			},
 			images: [
 				{
 					src: "nestmeet1.png",
